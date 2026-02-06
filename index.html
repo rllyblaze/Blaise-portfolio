@@ -6,7 +6,7 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.cleaned.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
@@ -78,31 +78,51 @@
       <section class="hero container">
         <img class="hero__img" src="./images/profile-pic.png" alt="Profile Picture">
         <h2 class="hero__subtitle">Hi, I'm Blaise</h2>
-        <h1 class="hero__title">IT PROFESSIONAL<br> cybersecurity </h1>
-        <p class="hero__description">I am based near Washington DC. I am a student at George Mason University, pursuing my associate degree in <strong>Information Technology</strong></p>
+        <h1 class="hero__title">IT PROFESSIONAL<br> CLOUD ENGINEER </h1>
+        <p class="hero__description">I am based near Washington DC. I am a student at George Mason University, pursuing my bachelor degree in <strong>Information Technology</strong></p>
         <a class="hero__btn btn" href="mailto:blaise.adabiokou6@gmail.com">Reach out</a>
       </section>
 
       <section id = "about" class="about container section">
       <div class="about__content">
         <h2 class="about__title">About</h2>
-        <p class="about__description">I'm Blaise, <strong>Cloud Practitioner</strong> and <strong>Cybersecurity Engineer</strong> based near Washington DC. I am passionate about solving problems and building impactful solutions. I have my associate degree in May 2025 at Northern Virginia Community College and crrently enrolled in Bachelor of Science at George Mason Univeristy. By following tutorials to build my IT portfolio, I developed skills in web development, problem-solving, and presenting technical projects in a professional way. I value growth, collaboration, and excellence.</p>
-        <p class="about__description">I am proficient in Python, HTML, CSS, Javascript and Figma. I currently hold the AWS Cloud Practitioner certification and I am continously learning to deepen my expertise.</p>
-        <p class="about__description">I take pride in delivering results and helping others succeed. I am excited to bring my skills and determination to a role in cloud computing, cybersecurity. I am looking forward to tackling challenges and growing alongside a dynamic team.</p>
+        
+
+
+
+        <p class="about__description">I'm Blaise, an <strong>AWS Cloud Practitioner</strong> and a <strong>Cloud Engineer</strong> based near Washington DC. I am passionate about solving problems and building solutions in cloud computing. I hold an Associate degree (May 2025) from Northern Virginia Community College and pursuing a BS at George Mason Univeristy.</p>
+        <p class="about__description">Proficient in Python, HTML, CSS, Javascript and Figma.  I have hands-on experience with AWS services and am preparing for the AWS Solutions Architect exam.I thrive on troubleshooting, delivering results, and helping teams succeed.</p>
+        <p class="about__description"> Excited to contribute to cloud support, tackle challenges, and grow with a dynamic team.</p>
         <hr class="about__hr">
         <h3 class="about__subtitle">Skills</h3>
+        
+        
         <div class="about__ul-container">
+          
           <ul class="about__ul">
-            <li class="about__list">HTML</li>
-            <li class="about__list">CSS</li>
-            <li class="about__list">AWS CLOUD</li>
+            <h4>Programming Languages</h4>
+            <li class="about__list">JavaScript</li>
+            <li class="about__list">Python</li>
+            <li class="about__list">SQL</li>
+          </ul>
+          <ul class="about__ul">
+            <h4>Cloud Platforms</h4>
+            <li class="about__list">AWS Cloud</li>
+          </ul>
+          <ul class="about__ul">
+            <h4>Operating Systems</h4>
+            <li class="about__list">Linux (Amazon Linux) - SSH, Bash, EC2 environment</li>
+            <li class="about__list">Windows</li>
           </ul>
 
-        <ul class="about__ul">
-          <li class="about__list">SQL</li>
-          <li class="about__list">SIEM tools</li>
-          <li class="about__list">NIST CSF</li>
-        </ul>
+        <!-- <ul class="about__ul">
+          <li class="about__list">Linux (Amazon Linux) - SSH</li>
+          <li class="about__list">AWS EC2</li>
+          <li class="about__list">S3</li>
+          <li class="about__list">RDS</li>
+          <li class="about__list">DynamoDB</li>
+          <li class="about__list">Lambda</li>
+        </ul> -->
       </div>
       </div>
       <div class= "about__img-wrapper">
@@ -110,39 +130,89 @@
       </div>
     </section>
 
+    <!-- <section class="section video">
+  <div class="container video__container">
+    <h2 class="video__title">Project Walkthrough</h2>
+    <p class="video__description">
+      A short overview explaining my architecture decisions, AWS services used,
+      and how the system works end-to-end.
+    </p>
+
+    <div class="video__wrapper">
+      <video
+        class="video__player"
+        controls
+        preload="metadata"
+        poster="assets/video-poster.jpg"
+      >
+        <source src="assets/project-walkthrough.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</section> -->
+
+
       <section id= "featured" class="featured container section">
         <h3 class="featured__subtitle">Featured Project</h3>
         <div class="featured__wrapper">
-          <h2 class="featured__title">My portfolio</h2>
-          <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <div class="container video__container">
+    <h2 class="video__title">AWS VPC Architecture</h2>
+    <!-- <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z" clip-rule="evenodd" />
           </svg>
-          </a>
+          </a> -->
+    <p class="video__description">
+      A short overview explaining my architecture decisions - AWS services used - and how the system works end-to-end.
+    </p>
+
+    <div class="video__wrapper">
+      <video
+        class="video__player"
+        controls
+        preload="metadata"
+        poster="assets/video-poster.jpg"
+      >
+        <source src="assets/project-walkthrough.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+          <!-- <h2 class="featured__title">My portfolio</h2> -->
+          <!-- <a class="featured__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z" clip-rule="evenodd" />
+          </svg>
+          </a> -->
         </div>
-        <p class="featured__description">A clean, responsive website. Explore my work to see how I combined design and functionality. </p>
+        <p class="featured__description">An AWS VPC architecture, how real-world AWS environments control access, reduce exposure, and manage cost. Explore my work to see secure AWS Networking patterns. </p>
         <div class="featured__info-container">
         <div >
           <h3 class="featured__label">Tech Stack</h3>
           <ul class="featured__tech-stack">
-            <li class="featured__info">HTML</li>
-            <li class="featured__info">CSS</li>
-            <li class="featured__info">JS</li>
-            <!-- <li class="featured__info">NextJS</li>
-            <li class="featured__info">Axios</li>
-            <li class="featured__info">Supabase</li>
-            <li class="featured__info">Stripe</li> -->
+            <li class="featured__info">AWS</li>
+            <li class="featured__info">VPC</li>
+            <li class="featured__info">EC2</li>
+            <li class="featured__info">Security Group</li>
+            <li class="featured__info">NAT Gateway</li>
+            <li class="featured__info">VPC Peering</li>
+            <li class="featured__info">VPC Endpoints (S3)</li>
+            <li class="featured__info">CloudWatch</li>
+            <li class="featured__info">Athena</li>
+            <li class="featured__info">Linux</li>
+            <li class="featured__info">SSH</li>
+            <li class="featured__info">AWS CLI</li>
           </ul>
         </div>
         <div>
           <h3 class="featured__label">Project Type</h3>
-          <p class="featured__info">Frontend Project</p>
+          <p class="featured__info">AWS Networking and Secure Architecture</p>
         </div>
         <div>
           <h3 class="featured__label">Timeline</h3>
-          <p class="featured__info">December 2024 - present</p>
+          <p class="featured__info">February 2026</p>
         </div>
       </div>
-      <div class="featured__img-container">
+      <!-- <div class="featured__img-container">
         <div class="featured__img-wrapper">
           <img src= "./images/page1.png" alt="Hero Icon Picture">   
         </div>
@@ -160,7 +230,7 @@
         </div>
         <div class="featured__img-wrapper">
           <img src="./images/page6.png" alt="Hero Icon Picture">         
-        </div>
+        </div> -->
         <!-- <div class="featured__img-wrapper">
           <img src="./images/heroicons.com_.png" alt="Hero Icon Picture">         
         </div>
